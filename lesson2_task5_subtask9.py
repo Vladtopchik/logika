@@ -1,6 +1,6 @@
 import sqlite3
 
-connection = sqlite3.connect(':memory:')
+connection = sqlite3.connect('secret.db')
 cursor = connection.cursor()
 
 cursor.execute('''CREATE TABLE students (
